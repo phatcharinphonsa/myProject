@@ -29,7 +29,7 @@ use App\Http\Controllers\ClientVerifyController;
 */
 
 // Main Page Route
-Route::get('/', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard-ecommerce');
+Route::get('/', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard-ecommerce')->middleware('role:admin');;
 
 Route::get('/verify', [ClientVerifyController::class, 'index'])->name('verify');
 

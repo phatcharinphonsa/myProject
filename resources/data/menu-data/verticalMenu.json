@@ -1,5 +1,32 @@
 {
-  "menu": [
+"admin":[
+    {
+        "navheader": "admin",
+        "slug": ""
+      },
+      {
+        "url": "app/email",
+        "name": "Email",
+        "icon": "mail",
+        "slug": "app-email"
+      }
+],
+"client":[
+    {
+        "navheader": "client",
+        "slug": ""
+      },
+      {
+        "url": "app/email",
+        "name": "Email",
+        "icon": "mail",
+        "slug": "app-email"
+      }
+],
+
+
+
+"menuzz": [
     {
       "name": "Dashboards",
       "badge": "2",
