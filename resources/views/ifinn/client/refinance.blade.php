@@ -1,6 +1,6 @@
 @extends('layouts/contentLayoutMaster')
 
-@section('title', 'ยืนยันตัวตน')
+@section('title', 'Refinance')
 
 @section('vendor-style')
     <!-- vendor css files -->
@@ -26,7 +26,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="mb-0">ข้อมูลทั่วไป</h5>
+                        <h5 class="mb-0">รีไฟแนนซ์</h5>
                         <small class="text-muted">กรุณากรอกรายละเอียดให้ครบ.</small>
                     </div>
                     <form action="{{ route('postverify') }}" method="POST" enctype="multipart/form-data">

@@ -16,6 +16,8 @@ use App\Http\Controllers\MiscellaneousController;
 use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\ChartsController;
 use App\Http\Controllers\ClientVerifyController;
+use App\Http\Controllers\ClientDashboardController;
+use App\Http\Controllers\ClientRefinanceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,11 +29,17 @@ use App\Http\Controllers\ClientVerifyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//->middleware('role:admin')
 // Main Page Route
-Route::get('/', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard-ecommerce')->middleware('role:admin');;
+Route::get('/', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard-ecommerce');
 
-Route::get('/verify', [ClientVerifyController::class, 'index'])->name('verify');
+
+Route::group(['prefix' => 'client'], function () {
+    Route::get('verify', [ClientVerifyController::class, 'index'])->name('verify');
+    Route::post('postverify', [ClientVerifyController::class, 'store'])->name('postverify');
+    Route::get('dashboard', [ClientDashboardController::class, 'index'])->name('client-dashboard');
+    Route::get('refinance', [ClientRefinanceController::class, 'index'])->name('client-refinance');
+});
 
 // locale Route
 Route::get('lang/{locale}',[LanguageController::class,'swap']);

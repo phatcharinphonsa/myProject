@@ -17,10 +17,22 @@
         "slug": ""
       },
       {
-        "url": "app/email",
-        "name": "Email",
-        "icon": "mail",
-        "slug": "app-email"
+        "url": "client/dashboard",
+        "name": "clientDashboard",
+        "icon": "home",
+        "slug": "client-dashboard"
+      },
+      {
+        "url": "client/verify",
+        "name": "Verify",
+        "icon": "user",
+        "slug": "client-verify"
+      },
+      {
+        "url": "client/refinance",
+        "name": "refinance",
+        "icon": "user",
+        "slug": "client-refinance"
       }
 ],
 
@@ -49,10 +61,22 @@
       ]
     },
     {
-        "url": "/verify",
-        "name": "TEST",
+        "url": "client/dashboard",
+        "name": "clientDashboard",
+        "icon": "home",
+        "slug": "client-dashboard"
+      },
+    {
+        "url": "client/verify",
+        "name": "client/verify",
         "icon": "mail",
         "slug": "verify"
+      },
+      {
+        "url": "client/refinance",
+        "name": "refinance",
+        "icon": "user",
+        "slug": "client-refinance"
       },
 
     {

@@ -14,7 +14,11 @@
   <link rel="stylesheet" href="{{ asset(mix('css/base/plugins/charts/chart-apex.css')) }}">
   <link rel="stylesheet" href="{{ asset(mix('css/base/plugins/extensions/ext-component-toastr.css')) }}">
 @endsection
-
+@if (session('success'))
+<script>
+    toastr.success("{{ session('success') }}");
+</script>
+@endif
 @section('content')
 <!-- Dashboard Ecommerce Starts -->
 <section id="dashboard-ecommerce">
@@ -33,6 +37,7 @@
         </div>
       </div>
     </div>
+
     <!--/ Medal Card -->
 
     <!-- Statistics Card -->
