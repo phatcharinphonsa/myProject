@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\UserProfile;
+use App\Models\Product;
+use App\Models\RefinanceOption;
+
 
 
 class ClientRefinanceController extends Controller
@@ -19,9 +22,20 @@ class ClientRefinanceController extends Controller
 
         $userProfile = UserProfile::where('user_id', auth()->id())->first();
 
+        $products = Product::orderBy('created_at', 'desc')->get();
 
 
-        return view('/ifinn/client/refinance',compact('userProfile'), ['pageConfigs' => $pageConfigs]);
+        return view('/ifinn/client/refinance', compact('userProfile', 'products'), ['pageConfigs' => $pageConfigs]);
+    }
+
+    public function getPrice($id)
+    {
+        $product = Product::find($id);
+        if ($product && $product->max_price) {
+            return response()->json(['max_price' => $product->max_price]);
+        } else {
+            return response()->json(['error' => 'Product not found or max_price not available']);
+        }
     }
 
     /**

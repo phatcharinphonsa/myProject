@@ -45,6 +45,7 @@ Route::group(['prefix' => 'client'], function () {
 Route::get('lang/{locale}',[LanguageController::class,'swap']);
 
 
+Route::get('/products/{id}/price', [ClientRefinanceController::class, 'getPrice']);
 /* Route Dashboards */
 Route::group(['prefix' => 'dashboard'], function () {
     Route::get('analytics', [DashboardController::class, 'dashboardAnalytics'])->name('dashboard-analytics');
