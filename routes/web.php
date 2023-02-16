@@ -31,8 +31,40 @@ use App\Http\Controllers\ClientRefinanceController;
 */
 //->middleware('role:admin')
 // Main Page Route
-Route::get('/', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard-ecommerce');
+// Furniture Routes
+$controller_path = 'App\Http\Controllers';
 
+Route::get('/logins', $controller_path . '\FurnitureController@logins')->name('logins');
+Route::get('/furniture', $controller_path . '\FurnitureController@index')->name('furniture');
+Route::get('/users', $controller_path . '\FurnitureController@users')->name('users');
+Route::get('/addusers', $controller_path . '\FurnitureController@addusers')->name('addusers');
+Route::get('/editusers', $controller_path . '\FurnitureController@editusers')->name('editusers');
+Route::get('/agents', $controller_path . '\FurnitureController@agents')->name('agents');
+Route::get('/addagents', $controller_path . '\FurnitureController@addagents')->name('addagents');
+Route::get('/editagents', $controller_path . '\FurnitureController@editagents')->name('editagents');
+Route::get('/customer', $controller_path . '\FurnitureController@customer')->name('customer');
+Route::get('/addcustomer', $controller_path . '\FurnitureController@addcustomer')->name('addcustomer');
+Route::get('/editcustomer', $controller_path . '\FurnitureController@editcustomer')->name('editcustomer');
+Route::get('/furtype', $controller_path . '\FurnitureController@furtype')->name('furtype');
+Route::get('/addfurtype', $controller_path . '\FurnitureController@addfurtype')->name('addfurtype');
+Route::get('/editfurtype', $controller_path . '\FurnitureController@editfurtype')->name('editfurtype');
+Route::get('/fur', $controller_path . '\FurnitureController@fur')->name('fur');
+Route::get('/addfur', $controller_path . '\FurnitureController@addfur')->name('addfure');
+Route::get('/editfur', $controller_path . '\FurnitureController@editfur')->name('editfur');
+Route::get('/order', $controller_path . '\FurnitureController@order')->name('order');
+Route::get('/addorder', $controller_path . '\FurnitureController@addorder')->name('addorder');
+Route::get('/editorder', $controller_path . '\FurnitureController@editorder')->name('editorder');
+
+Route::get('/tbfurniture', $controller_path . '\FurnitureController@tbfurniture')->name('tbfurniture');
+Route::get('/tbagents', $controller_path . '\FurnitureController@tbagents')->name('tbagents');
+Route::get('/tborders', $controller_path . '\FurnitureController@tborders')->name('tborders');
+Route::get('/tbfurtype', $controller_path . '\FurnitureController@tbfurtype')->name('tbfurtype');
+Route::get('/tbusers', $controller_path . '\FurnitureController@tbusers')->name('tbusers');
+Route::get('/tbcustomers', $controller_path . '\FurnitureController@tbcustomers')->name('tbcustomers');
+Route::get('/sale', $controller_path . '\FurnitureController@sale')->name('sale');
+
+ 
+Route::get('/', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard-ecommerce');
 
 Route::group(['prefix' => 'client'], function () {
     Route::get('verify', [ClientVerifyController::class, 'index'])->name('verify');

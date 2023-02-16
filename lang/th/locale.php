@@ -1,6 +1,16 @@
 <?php
 
 return [
+    "client" => "เมนู",
+    "furniture" => "หน้าแรก",
+    "userFurniture" => "ข้อมูลผู้ใช้ระบบ",
+    "agents" => "ร้านตัวแทนจำหน่าย",
+    "customer" => "ข้อมูลลูกค้า",
+    "furtype" => "ประเภทสินค้า",
+    "fur" => "สินค้า",
+    "order" => "รายการสั่งซื้อสินค้า",
+    "sale" => "รายการขายสินค้า",
+    "report" => "รายงาน",
     "Apps & Pages" => "Apps & Pages",
     "User Interface" => "User Interface",
     "Dashboards" => "Dashboards",

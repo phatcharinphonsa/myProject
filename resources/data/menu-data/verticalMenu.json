@@ -39,6 +39,136 @@
 
 
 "menuzz": [
+{
+        "navheader": "client",
+        "slug": ""
+      },
+      {
+        "url": "/furniture",
+        "name": "furniture",
+        "icon": "home",
+        "slug": "furniture"
+      },
+      {
+        "url": "/users",
+        "name": "userFurniture",
+        "icon": "user",
+        "slug": "user-furniture"
+      },
+      {
+        "url": "/agents",
+        "name": "agents",
+        "icon": "user-plus",
+        "slug": "agents"
+      },
+      {
+        "url": "/customer",
+        "name": "customer",
+        "icon": "users",
+        "slug": "customer"
+      },
+      {
+        "url": "/furtype",
+        "name": "furtype",
+        "icon": "package",
+        "slug": "furtype"
+      },
+      {
+        "url": "/fur",
+        "name": "fur",
+        "icon": "shopping-bag",
+        "slug": "fur"
+      },
+       {
+        "url": "/order",
+        "name": "order",
+        "icon": "shopping-cart",
+        "slug": "order"
+      },
+      {
+        "url": "/sale",
+        "name": "sale",
+        "icon": "box",
+        "slug": "sale"
+      },
+      {
+        "url": "/report",
+        "name": "report",
+        "icon": "file-text",
+        "slug": "report"
+      },
+      {
+        "navheader": "client",
+        "slug": ""
+      },
+      {
+        "url": "/furniture",
+        "name": "furniture",
+        "icon": "home",
+        "slug": "furniture"
+      },
+      {
+        "url": "/users",
+        "name": "userFurniture",
+        "icon": "user",
+        "slug": "user-furniture"
+      },
+      {
+        "url": "/agents",
+        "name": "agents",
+        "icon": "user-plus",
+        "slug": "agents"
+      },
+      {
+        "url": "/customer",
+        "name": "customer",
+        "icon": "users",
+        "slug": "customer"
+      },
+      {
+        "url": "/furtype",
+        "name": "furtype",
+        "icon": "package",
+        "slug": "furtype"
+      },
+      {
+        "url": "/fur",
+        "name": "fur",
+        "icon": "shopping-bag",
+        "slug": "fur"
+      },
+       {
+        "url": "/order",
+        "name": "order",
+        "icon": "shopping-cart",
+        "slug": "order"
+      },
+      {
+        "url": "/sale",
+        "name": "sale",
+        "icon": "box",
+        "slug": "sale"
+      },
+      {
+        "url": "/report",
+        "name": "report",
+        "icon": "file-text",
+        "slug": "report"
+      },
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
     {
       "name": "Dashboards",
       "badge": "2",
@@ -1085,5 +1215,8 @@
       "slug": "raise-support",
       "newTab": true
     }
+      
+      
+
   ]
 }

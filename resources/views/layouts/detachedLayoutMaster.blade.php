@@ -19,9 +19,7 @@
     content="ifinn">
   <meta name="author" content="cubisoft">
   <meta name="csrf-token" content="{{ csrf_token() }}" />
-  <title>@yield('title') - iFinn</title>
-  <link rel="apple-touch-icon" href="{{ asset('images/ico/favicon-32x32.png') }}">
-  <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/logo/favicon.ico') }}" />
+  <title>@yield('title') - ยิ่งเจริญ อินทีเรีย</title>
   <link href="https://fonts.googleapis.com/css2?family=Prompt,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
     rel="stylesheet">
 

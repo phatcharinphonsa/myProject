@@ -57,35 +57,6 @@
             <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon"
                         data-feather="menu"></i></a></li>
         </ul>
-        <ul class="nav navbar-nav bookmark-icons">
-            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="{{ url('app/email') }}"
-                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Email"><i class="ficon"
-                        data-feather="mail"></i></a></li>
-            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="{{ url('app/chat') }}"
-                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Chat"><i class="ficon"
-                        data-feather="message-square"></i></a></li>
-            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="{{ url('app/calendar') }}"
-                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Calendar"><i class="ficon"
-                        data-feather="calendar"></i></a></li>
-            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="{{ url('app/todo') }}"
-                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Todo"><i class="ficon"
-                        data-feather="check-square"></i></a></li>
-        </ul>
-        <ul class="nav navbar-nav">
-            <li class="nav-item d-none d-lg-block">
-                <a class="nav-link bookmark-star">
-                    <i class="ficon text-warning" data-feather="star"></i>
-                </a>
-                <div class="bookmark-input search-input">
-                    <div class="bookmark-input-icon">
-                        <i data-feather="search"></i>
-                    </div>
-                    <input class="form-control input" type="text" placeholder="Bookmark" tabindex="0"
-                        data-search="search">
-                    <ul class="search-list search-list-bookmark"></ul>
-                </div>
-            </li>
-        </ul>
     </div>
     <ul class="nav navbar-nav align-items-center ms-auto">
         <li class="nav-item dropdown dropdown-language">
@@ -106,16 +77,7 @@
         </li>
         <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon"
                     data-feather="{{ $configData['theme'] === 'dark' ? 'sun' : 'moon' }}"></i></a></li>
-        <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon"
-                    data-feather="search"></i></a>
-            <div class="search-input">
-                <div class="search-input-icon"><i data-feather="search"></i></div>
-                <input class="form-control input" type="text" placeholder="Explore Vuexy..." tabindex="-1"
-                    data-search="search">
-                <div class="search-input-close"><i data-feather="x"></i></div>
-                <ul class="search-list search-list-main"></ul>
-            </div>
-        </li>
+        
         <li class="nav-item dropdown dropdown-cart me-25">
             <a class="nav-link" href="javascript:void(0);" data-bs-toggle="dropdown">
                 <i class="ficon" data-feather="shopping-cart"></i>

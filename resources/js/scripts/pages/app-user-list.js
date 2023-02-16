@@ -238,17 +238,7 @@ $(function () {
             }, 50);
           }
         },
-        {
-          text: 'Add New User',
-          className: 'add-new btn btn-primary',
-          attr: {
-            'data-bs-toggle': 'modal',
-            'data-bs-target': '#modals-slide-in'
-          },
-          init: function (api, node, config) {
-            $(node).removeClass('btn-secondary');
-          }
-        }
+        
       ],
       // For responsive popup
       responsive: {
